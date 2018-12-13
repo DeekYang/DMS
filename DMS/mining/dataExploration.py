@@ -55,9 +55,9 @@ def statistical(data):
     print ("\n输出各变量的 众数：")
     print (data.mode())
     # 3.频率分布直方图
-    for i in data.columns:
-        plt.hist(data[i],10)
-    plt.show()
+    # for i in data.columns:
+    #     plt.hist(data[i],10)
+    # plt.show()
     # 4.偏态%%峰态分析，正态分布图 标准正态分布图
 
 # 变量关系分析--散点图，帕累托图
