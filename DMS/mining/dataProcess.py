@@ -6,7 +6,7 @@ from sklearn import preprocessing
 from sklearn.decomposition import PCA
 
 # 数据转换
-def changeOfContinuity(data):
+def changeContinuity(data):
     waychange = input('请选择数据转换处理方式：1.标准化;2.归一化;3.二值化:')  
     # # demo:
     # X_train = np.array([[ 1., -1.,  2.],
@@ -26,6 +26,7 @@ def changeOfContinuity(data):
     # print (scaler.transform(X_train))
     # X_test = [[-1., 1., 0.]]
     # print (scaler.transform(X_test))
+    #数据缩放
     if waychange == '1':
         # 标准化
         scaled = preprocessing.scale(data)
@@ -41,8 +42,8 @@ def changeOfContinuity(data):
         binarized = preprocessing.binarize(data,threshold=float(threshold))
         return binarized
 
-def changeOfDisperse(data):
-    # 分类特征编码
+def changeDisperse(data):
+    # 一位有效编码（One-Hot-Encoding）
     # 标签编码
     return data
 
@@ -100,14 +101,13 @@ def selectRows(data):
     return data
     
 if __name__ == '__main__':
-    data = pd.read_excel('../data/in_test.xls').head(20)
-    # print (data)
-    # data = changeOfContinuity(data)
-    # data = changeOfDisperse(data)
+    data = pd.read_excel('../data/in_test.xls').head(10)
+    print (data)
+    data = changeContinuity(data)
+    # data = changeDisperse(data)
     # data = handleOutlier(data)
     # data = handleNAN(data)
     # data = handleDuplicate(data)
     # data = selectColumns(data)
     # data = selectRows(data)
-    # print (data)
-    
+    print (data)
