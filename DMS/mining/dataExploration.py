@@ -94,7 +94,8 @@ def contrast(data):
     for i in data.columns:   
         x=data.index
         y=data[i]
-        plt.plot(x,y)
+        plt.plot(x,y,label=i)
+    plt.legend()   
     plt.show()
 
 if __name__ == '__main__':
