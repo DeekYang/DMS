@@ -81,4 +81,4 @@ if __name__ == "__main__":
 		time.sleep(10)	
 	
 		# 保存查询结果
-		citydata.to_excel('../data/testLagouSpider/LagouSpider.xls',sheet_name='sheet1')
+		citydata.to_excel('LagouSpider.xls',sheet_name='sheet1')
