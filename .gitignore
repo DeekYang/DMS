@@ -23,3 +23,14 @@ DMS/data/testJinnan/temp/data_train.csv
 DMS/data/testJinnan/In/jinnan_round1_train_20181227.csv
 DMS/data/testJinnan/In/jinnan_round1_testB_20190121.csv
 DMS/data/testJinnan/Out/submit20190122.csv
+DMS/project/O2O/data/In/ccf_offline_stage1_test_revised.csv
+DMS/project/O2O/data/In/ccf_offline_stage1_test_revised_temp.csv
+DMS/project/O2O/data/In/ccf_online_stage1_train.csv
+DMS/project/O2O/data/In/ccf_offline_stage1_train.csv
+DMS/project/O2O/data/temp/data_train.csv
+DMS/project/O2O/data/temp/filename.pkl
+DMS/project/O2O/data/temp/data_demo.csv
+DMS/project/O2O/data/Out/sample_submission.csv
+DMS/project/O2O/data/In/ccf_online_stage1_train_temp.csv
+DMS/project/O2O/data/In/ccf_offline_stage1_train_temp.csv
+DMS/project/O2O/data/Out/submit.csv
